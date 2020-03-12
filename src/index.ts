@@ -89,9 +89,11 @@ document.addEventListener('keydown', (e) => {
       }
     }, 0);
   }
+
+  renderHTML();
 });
 
-document.addEventListener('input', () => {
+function renderHTML() {
   let string = '';
   let level = 0;
 
@@ -118,4 +120,6 @@ document.addEventListener('input', () => {
   render(page);
 
   code.textContent = string;
-});
+}
+
+document.addEventListener('input', renderHTML);
