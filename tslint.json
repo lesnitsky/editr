@@ -1,0 +1,13 @@
+{
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "quotemark": [true, "single"],
+    "member-access": [true, "no-public"],
+    "ordered-imports": false,
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "no-var-requires": false,
+    "no-bitwise": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"]
+  }
+}
